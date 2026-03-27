@@ -14,8 +14,22 @@ padding:0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    transform: scale(1.5);
-    transform-origin: center;
+    width: 100%;
+    /* Quitamos el scale que rompía el celu */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Agrandamos las cosas "a mano" para que parezca que hay zoom */
+#inicio h1 {
+    font-size: 3rem; /* Título bien grande */
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 1.5rem; /* Texto de abajo bien grande */
+    max-width: 800px;
+    line-height: 1.4;
 }
 
 .container{
