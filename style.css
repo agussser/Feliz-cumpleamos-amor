@@ -26,7 +26,7 @@ border:none;
 padding:12px 20px;
 margin:10px;
 border-radius:30px;
-font-size:16px;
+font-size:25px;
 cursor:pointer;
 transition:0.3s;
 box-shadow:0 5px 15px rgba(255,77,109,0.4);
@@ -433,7 +433,7 @@ opacity:1;
 }
 .volver{
 position: fixed;
-top: 20px;
+top: 80px;
 left: 20px;
 padding: 10px 15px;
 border: none;
