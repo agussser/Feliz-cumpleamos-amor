@@ -1,38 +1,37 @@
 html, body{
 height:100%;
 }
-body{
-font-family: 'Poppins', sans-serif;
-background: linear-gradient(135deg,#ff9a9e,#fad0c4);
-text-align:center;
-margin:0;
-padding:0;
-zoom: 1.4;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fcabae, #fad0c4);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esto evita el movimiento lateral */
 }
 #inicio {
+    height: 100vh; /* Ocupa exactamente toda la pantalla */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    /* Quitamos el scale que rompía el celu */
-    box-sizing: border-box;
-    padding: 20px;
+    overflow: hidden; /* Prohibido el scroll en esta sección */
+    position: relative;
+    
+    /* Esto simula el zoom 1.4 pero de forma controlada */
+    transform: scale(1.2); 
+    transform-origin: center;
 }
-
-/* Agrandamos las cosas "a mano" para que parezca que hay zoom */
-#inicio h1 {
-    font-size: 3rem; /* Título bien grande */
-    margin-bottom: 20px;
+.container1 p {
+    max-width: 90%; /* Para que no toque los bordes en el celu */
+    margin: 10px auto; 
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 18px; /* Texto grandecito */
 }
-
-#inicio p {
-    font-size: 1.5rem; /* Texto de abajo bien grande */
-    max-width: 800px;
-    line-height: 1.4;
-}
-
 .container{
 max-width:600px;
 margin:auto;
@@ -528,25 +527,6 @@ z-index: 999;
   position: absolute;
   top: 20px;
   left: 20px;
-}
-tarjeta-qsy{
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
-max-width:450px;
-
-margin:40px auto;
-
-text-align:center;
-
-animation: aparecer 0.5s ease;
-
 }
 .tarjeta2 {
     max-width: 500px; /* 🔥 más angosta */
