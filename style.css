@@ -10,7 +10,8 @@ padding:0;
 }
 
 .container{
-max-width:600px;
+
+max-width:700px;
 margin:auto;
 background:white;
 padding:30px;
@@ -26,7 +27,7 @@ border:none;
 padding:12px 20px;
 margin:10px;
 border-radius:30px;
-font-size:16px;
+font-size:25px;
 cursor:pointer;
 transition:0.3s;
 box-shadow:0 5px 15px rgba(255,77,109,0.4);
@@ -165,7 +166,7 @@ border-radius:20px;
 
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
-max-width:600px;
+max-width:700px;
 
 margin:40px auto;
 
@@ -351,21 +352,21 @@ opacity:1;
 }
 
 .foto {
-  margin: 100px 0; /* mas espacio = no aparecen juntas */
+  margin: 120px 0; /* mas espacio = no aparecen juntas */
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
 }
 
 .foto img {
-  width: 80%;
-  max-width: 550px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 15px;
 }
 
 /* cuando aparece */
 .foto.visible {
-  opacity: 1;
+  opacity: 10;
   transform: translateY(0);
 }
 #puzzle {
@@ -433,7 +434,7 @@ opacity:1;
 }
 .volver{
 position: fixed;
-top: 20px;
+top: 80px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -445,6 +446,7 @@ cursor: pointer;
 z-index: 999;
 }
 #inicio {
+
   min-height: 100vh;
 
   display: flex;
@@ -467,7 +469,7 @@ z-index: 999;
   border-radius: 15px;
 }
 .tarjeta-poema {
-  max-width: 600px;
+  max-width: 700px;
   margin: 80px auto;
 
   padding: 40px 30px;
@@ -484,7 +486,7 @@ z-index: 999;
 }
 .tarjeta-poema {
     max-width: 450px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 25px 20px;
     
     background: #f3dada;
@@ -502,27 +504,8 @@ z-index: 999;
 }
 .boton-volver {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 20px;
-}
-tarjeta-qsy{
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
-max-width:450px;
-
-margin:40px auto;
-
-text-align:center;
-
-animation: aparecer 0.5s ease;
-
 }
 .tarjeta2 {
     max-width: 500px; /* 🔥 más angosta */
