@@ -544,3 +544,42 @@ z-index: 999;
     font-size: 18px;
     line-height: 1.6;
 }
+/* Esto va al final de todo el archivo */
+@media (max-width: 700px) {
+    #inicio, .container, .container1 {
+        /* 1. Quitamos cualquier ancho fijo y forzamos el 100% */
+        width: 100% !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 20px !important;
+        
+        /* 2. Centrado total */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        
+        /* 3. Matamos el scale por si quedó vivo */
+        transform: none !important;
+    }
+
+    /* 4. Agrandamos el texto del recuadro blanco */
+    .container1 p, p {
+        font-size: 20px !important; /* Más grande como querías */
+        width: 90% !important; /* Que use casi todo el ancho */
+        text-align: center !important;
+    }
+
+    /* 5. El botón que se vea bien */
+    button {
+        font-size: 22px !important;
+        width: 80% !important;
+    }
+
+    /* 6. Título principal */
+    h1 {
+        font-size: 30px !important;
+        width: 100% !important;
+    }
+}
