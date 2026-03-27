@@ -530,7 +530,7 @@ z-index: 999;
     font-size: 18px;
     line-height: 1.6;
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     /* 1. Forzamos a que NADA pueda ser más ancho que la pantalla */
     html, body {
         width: 100% !important;
