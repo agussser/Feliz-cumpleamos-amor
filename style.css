@@ -544,7 +544,7 @@ z-index: 999;
 
     /* BOTONES: Los hacemos más grandes para que sea fácil tocarlos con el dedo */
     button {
-        width: 90%; /* Que el botón sea ancho */
+        width: 100%; /* Que el botón sea ancho */
         font-size: 24px;
         padding: 15px;
     }
