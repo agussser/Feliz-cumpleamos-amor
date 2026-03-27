@@ -23,15 +23,6 @@ body {
     transform: scale(1.2); 
     transform-origin: center;
 }
-.container1 p {
-    max-width: 90%; /* Para que no toque los bordes en el celu */
-    margin: 10px auto; 
-    text-align: center;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 15px 20px;
-    border-radius: 15px;
-    font-size: 18px; /* Texto grandecito */
-}
 .container{
 max-width:600px;
 margin:auto;
@@ -547,7 +538,7 @@ z-index: 999;
 @media (max-width: 768px) {
     #inicio {
         /* ACÁ CAMBIÁS EL ZOOM DEL CELU */
-        transform: scale(1.3); 
+        transform: scale(1.6); 
         
         /* Ajuste opcional: si el zoom es muy grande, 
            podés bajar un poco el tamaño de la letra acá */
