@@ -542,13 +542,6 @@ z-index: 999;
         margin-top: 20px;
     }
 
-    /* BOTONES: Los hacemos más grandes para que sea fácil tocarlos con el dedo */
-    button {
-        width: 100%; /* Que el botón sea ancho */
-        font-size: 24px;
-        padding: 15px;
-    }
-
     /* El rompecabezas debe achicarse para que entre en la pantalla del celu */
     #puzzle {
         transform: scale(0.8); /* Lo encogemos un poco para que no se corte */
@@ -565,11 +558,5 @@ z-index: 999;
         width: 90%;
         left: 5%;
         font-size: 16px;
-    }
-    
-    /* El botón volver que no tape el texto */
-    .volver {
-        position: static; /* Que fluya con el diseño en el celu */
-        margin-bottom: 20px;
     }
 }
