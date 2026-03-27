@@ -533,6 +533,7 @@ z-index: 999;
 @media (max-width: 700px) {
     #inicio {
         transform: scale(1.1);
+        transform-origin: center;
     }
     button{
     font-size:30px;
