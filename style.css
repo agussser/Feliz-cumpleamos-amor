@@ -12,11 +12,11 @@ body{
   font-size: 20px;
 }
 h1{
-  font-size: 40px;
+  font-size: 45px;
 }
 
 h2{
-  font-size: 35px;
+  font-size: 40px;
 }
 
 p{
@@ -39,7 +39,7 @@ border:none;
 padding:12px 20px;
 margin:10px;
 border-radius:30px;
-font-size:30px;
+font-size:35px;
 cursor:pointer;
 transition:0.3s;
 box-shadow:0 5px 15px rgba(255,77,109,0.4);
@@ -178,7 +178,7 @@ border-radius:20px;
 
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
-max-width:700px;
+max-width:750px;
 
 margin:40px auto;
 
@@ -307,8 +307,8 @@ animation: aparecerCarta 1s ease;
 }
 
 .sobre{
-width:650px;
-height:340px;
+width:750px;
+height:380px;
 background:#ffb6c1;
 position:relative;
 border-radius:10px;
@@ -471,7 +471,7 @@ z-index: 999;
   padding: 20px;
 }
 .container1 p {
-  max-width: 700px;
+  max-width: 750px;
   margin: 20px auto;
   text-align: center;
 
