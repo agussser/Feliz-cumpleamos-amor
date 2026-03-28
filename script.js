@@ -597,7 +597,7 @@ let html = "<h2>Resultados del juego ❤️</h2>"
 
 let totalPreguntas = resultados.length
 
-html += "<h3>Puntos: " + puntos + " / " + totalPreguntas + "</h3>"
+html += "<h2>Puntos: " + puntos + " / " + totalPreguntas + "</h2>"
 
 let mensaje = ""
 
@@ -613,9 +613,9 @@ mensaje = "💖 Amorrr medio mal pero bueno, aunque no hayas respondido todo bie
 else{
 mensaje = "💖 Amorrrr re mall bebe, pero te amo tanto tanto igual amor, vas a tener que estudiar mucho nomás después."
 }
-html += "<p style='font-size:20px'>" + mensaje + "</p>"
+html += "<p style='font-size:30px'>" + mensaje + "</p>"
 
-html += "<h3 style='margin-top:30px'>❤️ Gracias por jugar amor de mi vida ❤️</h3>"
+html += "<h2 style='margin-top:30px'>❤️ Gracias por jugar amor de mi vida ❤️</h2>"
 
 for(let i = 0; i < resultados.length; i++){
 
@@ -648,7 +648,7 @@ corazon.classList.add("corazon-fondo")
 
 corazon.style.left = Math.random()*100 + "vw"
 
-corazon.style.fontSize = (Math.random()*18 + 15) + "px"
+corazon.style.fontSize = (Math.random()*30 + 25) + "px"
 
 corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
 
