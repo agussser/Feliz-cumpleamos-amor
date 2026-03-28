@@ -597,7 +597,7 @@ let html = "<h2>Resultados del juego ❤️</h2>"
 
 let totalPreguntas = resultados.length
 
-html += "<h2>Puntos: " + puntos + " / " + totalPreguntas + "</h2>"
+html += "<h3>Puntos: " + puntos + " / " + totalPreguntas + "</h3>"
 
 let mensaje = ""
 
@@ -615,7 +615,7 @@ mensaje = "💖 Amorrrr re mall bebe, pero te amo tanto tanto igual amor, vas a 
 }
 html += "<p style='font-size:30px'>" + mensaje + "</p>"
 
-html += "<h2 style='margin-top:30px'>❤️ Gracias por jugar amor de mi vida ❤️</h2>"
+html += "<h3 style='margin-top:30px'>❤️ Gracias por jugar amor de mi vida ❤️</h3>"
 
 for(let i = 0; i < resultados.length; i++){
 
