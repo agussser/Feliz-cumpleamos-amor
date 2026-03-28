@@ -9,21 +9,21 @@ body{
   padding:0;
   overflow-x:hidden;
 
-  font-size: 20px; /* 🔥 esto agranda TODO de forma real */
+  font-size: 20px;
 }
 h1{
-  font-size: 34px;
+  font-size: 40px;
 }
 
 h2{
-  font-size: 28px;
+  font-size: 35px;
 }
 
 p{
-  font-size: 20px;
+  font-size: 30px;
 }
 .container{
-max-width:600px;
+max-width:750px;
 margin:auto;
 background:white;
 padding:30px;
@@ -39,7 +39,7 @@ border:none;
 padding:12px 20px;
 margin:10px;
 border-radius:30px;
-font-size:25px;
+font-size:30px;
 cursor:pointer;
 transition:0.3s;
 box-shadow:0 5px 15px rgba(255,77,109,0.4);
@@ -178,7 +178,7 @@ border-radius:20px;
 
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
-max-width:600px;
+max-width:700px;
 
 margin:40px auto;
 
@@ -307,8 +307,8 @@ animation: aparecerCarta 1s ease;
 }
 
 .sobre{
-width:700px;
-height:360px;
+width:650px;
+height:340px;
 background:#ffb6c1;
 position:relative;
 border-radius:10px;
@@ -471,7 +471,7 @@ z-index: 999;
   padding: 20px;
 }
 .container1 p {
-  max-width: 600px;
+  max-width: 700px;
   margin: 20px auto;
   text-align: center;
 
@@ -496,7 +496,7 @@ z-index: 999;
   overflow: hidden;
 }
 .tarjeta-poema {
-    max-width: 450px;
+    max-width: 600px;
     margin: 60px auto;
     padding: 25px 20px;
     
@@ -508,9 +508,9 @@ z-index: 999;
     text-align: center;
 }
 .tarjeta-poema p {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-style: italic;
 }
 .boton-volver {
@@ -519,7 +519,7 @@ z-index: 999;
   left: 20px;
 }
 .tarjeta2 {
-    max-width: 500px; /* 🔥 más angosta */
+    max-width: 550px; /* 🔥 más angosta */
     margin: 40px auto;
     padding: 20px 15px; /* 🔥 menos borde */
 
@@ -531,6 +531,6 @@ z-index: 999;
     text-align: center;
 }
 .tarjeta2 p {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.6;
 }
