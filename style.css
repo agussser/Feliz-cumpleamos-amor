@@ -544,3 +544,8 @@ z-index: 999;
   top: 120px;
   }
 }
+@media (max-width: 600px){
+  .volver-poema{
+  top: 50px;
+  }
+}
