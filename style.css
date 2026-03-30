@@ -535,7 +535,7 @@ z-index: 999;
 .volver-poema{
   top: 50px;
 }
-@media (min-width: 900px){
+@media (min-width: 2000px){
   .sobre{
     width: 1200px; 
     height: 600px;
@@ -544,8 +544,4 @@ z-index: 999;
   top: 120px;
   }
 }
-@media (max-width: 600px){
-  .volver-poema{
-  top: 50px;
-  }
-}
+
