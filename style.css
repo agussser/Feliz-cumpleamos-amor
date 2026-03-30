@@ -532,16 +532,27 @@ z-index: 999;
     font-size: 30px;
     line-height: 1.6;
 }
-.volver-poema{
-  top: 50px;
-}
-@media (min-width: 900px){
+@media (min-width: 2000px){
   .sobre{
     width: 1200px; 
     height: 600px;
   }
   .volver-poema{
   top: 120px;
+  }
+}
+@media (max-width: 600px){
+  .volver-poema{
+  top: 50px;
+  }
+  .container{
+  max-width:400px;
+  margin:auto;
+  background:white;
+  padding:15px;
+  border-radius:20px;
+  box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+  margin-top:40px;
   }
 }
 
