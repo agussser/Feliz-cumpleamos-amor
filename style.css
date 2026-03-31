@@ -532,21 +532,20 @@ z-index: 999;
     font-size: 30px;
     line-height: 1.6;
 }
-@media (min-width: 2000px){
+.tarjeta2 p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+.volver-poema{
+  top: 50px;
+}
+@media (min-width: 900px){
   .sobre{
     width: 1200px; 
     height: 600px;
   }
   .volver-poema{
   top: 120px;
-  }
-}
-@media (max-width: 600px){
-  .volver-poema{
-  top: 120px;
-  }
-  .sobre{
-  height:500px;
   }
 }
 
