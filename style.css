@@ -451,7 +451,7 @@ position: relative;
 }
 .volver-1{
 position: absolute;
-top: 100px;
+top: 70px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -464,7 +464,7 @@ z-index: 999;
 }
 .volver-2{
 position: absolute;
-top: 50px;
+top: 10px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -477,7 +477,7 @@ z-index: 999;
 }
 .volver-3{
 position: absolute;
-top: 40px;
+top: -10px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -490,7 +490,7 @@ z-index: 999;
 }
 .volver-4{
 position: absolute;
-top: 100px;
+top: 70px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -503,7 +503,7 @@ z-index: 999;
 }
 .volver-5{
 position: absolute;
-top: 120px;
+top: 90px;
 left: 20px;
 padding: 10px 15px;
 border: none;
