@@ -588,9 +588,6 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  .puzzlePantalla{
-  zoom:100%;
-  }
 }
 @media (hover: hover) and (pointer: fine){
   .sobre{
