@@ -586,7 +586,7 @@ z-index: 999;
 }
 @media (hover: none) and (pointer: coarse){
   .contenido-carta{
-  width:90%;
+  width:85%;
   }
 }
 @media (hover: hover) and (pointer: fine){
