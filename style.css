@@ -543,16 +543,11 @@ z-index: 999;
 }
 @media (max-width: 600px){
   .volver-poema{
-  top: 50px;
+  top: 120px;
   }
-  .container{
-  max-width:400px;
-  margin:auto;
-  background:white;
-  padding:15px;
-  border-radius:20px;
-  box-shadow:0px 10px 25px rgba(0,0,0,0.2);
-  margin-top:40px;
+  .sobre{
+  width:920px;
+  height:450px;
   }
 }
 
