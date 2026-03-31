@@ -584,6 +584,11 @@ z-index: 999;
     font-size: 30px;
     line-height: 1.6;
 }
+@media (hover: none) and (pointer: coarse){
+  .contenido-carta{
+  width:90%;
+  }
+}
 @media (hover: hover) and (pointer: fine){
   .sobre{
     width: 1000px;
