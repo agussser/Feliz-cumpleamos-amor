@@ -594,7 +594,7 @@ z-index: 999;
   width:85%;
   }
   .pieza{
-  background-size: 775px 1125px;
+  zoom:2;
   }
 
 }
