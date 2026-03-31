@@ -446,8 +446,11 @@ opacity:1;
 #recuerdos{
   overflow: visible;
 }
+#pagina{
+position: relative;
+}
 .volver-1{
-position: fixed;
+position: absolute;
 top: 100px;
 left: 20px;
 padding: 10px 15px;
@@ -460,7 +463,7 @@ cursor: pointer;
 z-index: 999;
 }
 .volver-2{
-position: fixed;
+position: absolute;
 top: 50px;
 left: 20px;
 padding: 10px 15px;
@@ -473,7 +476,7 @@ cursor: pointer;
 z-index: 999;
 }
 .volver-3{
-position: fixed;
+position: absolute;
 top: 40px;
 left: 20px;
 padding: 10px 15px;
@@ -486,7 +489,7 @@ cursor: pointer;
 z-index: 999;
 }
 .volver-4{
-position: fixed;
+position: absolute;
 top: 100px;
 left: 20px;
 padding: 10px 15px;
@@ -499,7 +502,7 @@ cursor: pointer;
 z-index: 999;
 }
 .volver-5{
-position: fixed;
+position: absolute;
 top: 120px;
 left: 20px;
 padding: 10px 15px;
