@@ -593,6 +593,10 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
+  .pieza{
+  background-size: 500px 800px;
+  }
+
 }
 @media (hover: hover) and (pointer: fine){
   .sobre{
