@@ -589,7 +589,7 @@ z-index: 999;
   width:85%;
   }
   .puzzlePantalla{
-  zoom:100px;
+  zoom:100%;
   }
 }
 @media (hover: hover) and (pointer: fine){
