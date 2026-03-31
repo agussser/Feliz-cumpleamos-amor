@@ -591,9 +591,9 @@ z-index: 999;
   width:85%;
   }
   #puzzle{
-    transform: scale(2.0);
+    transform: scale(8);
     transform-origin: top center;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 }
 @media (hover: hover) and (pointer: fine){
