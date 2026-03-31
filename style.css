@@ -593,9 +593,6 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  .pieza{
-  zoom:2;
-  }
 
 }
 @media (hover: hover) and (pointer: fine){
