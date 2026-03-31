@@ -590,23 +590,9 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  #puzzle {
-  width: 775px;
-  height: 1125x;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-  }
-
-  .pieza, .vacio {
-  width: 225px;
-  height: 225px;
-  }
-
-  .pieza {
-  background-image: url("fotoPuzzle.jpg");
-  background-size: 775px 1125px;
-  cursor: pointer;
+  #puzzle{
+    transform: scale(1.3);
+    transform-origin: top center;
   }
 }
 @media (hover: hover) and (pointer: fine){
