@@ -593,11 +593,22 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
+  .foto img {
+  width: 80%;
+  max-width: 800px;
+
+  border-radius: 15px;
+
+  outline: 1px solid transparent;
+}
 
 }
 @media (hover: hover) and (pointer: fine){
   .sobre{
     width: 1000px;
     height: 500px;
+  }
+  .foto img{
+    image-rendering: -webkit-optimize-contrast;
   }
 }
