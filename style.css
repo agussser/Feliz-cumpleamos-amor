@@ -593,6 +593,19 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
+  .foto img{
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+
+  image-rendering: auto;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  }
+  .foto{
+  overflow: hidden;
+  border-radius: 15px;
+ }
 
 }
 @media (hover: hover) and (pointer: fine){
