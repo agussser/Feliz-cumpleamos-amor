@@ -594,7 +594,17 @@ z-index: 999;
   width:85%;
   }
   #puzzle{
-    zoom:1.7;
+    zoom:1.5;
+  }
+  .foto img{
+    transform: none !important;
+    filter: none !important;
+    will-change: auto;
+    image-rendering: auto;
+  }
+
+  .foto{
+    transform: none !important;
   }
 
 }
