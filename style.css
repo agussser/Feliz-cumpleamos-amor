@@ -593,10 +593,6 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  #puzzle{
-    transform: none !important;
-    zoom: 1 !important;
-  }
 
 }
 @media (hover: hover) and (pointer: fine){
