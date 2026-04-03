@@ -593,12 +593,6 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  .foto img{
-  filter: contrast(1);
- }
-  .foto{
-  background: transparent;
- }
   
 }
 @media (hover: hover) and (pointer: fine){
