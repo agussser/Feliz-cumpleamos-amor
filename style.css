@@ -593,15 +593,9 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  .foto img{
+  #puzzle{
     transform: none !important;
-    filter: none !important;
-    will-change: auto;
-    image-rendering: auto;
-  }
-
-  .foto{
-    transform: none !important;
+    zoom: 1 !important;
   }
 
 }
