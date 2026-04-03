@@ -598,6 +598,6 @@ z-index: 999;
 @media (hover: hover) and (pointer: fine){
   .sobre{
     width: 1000px;
-    height: 450px;
+    height: 500px;
   }
 }
