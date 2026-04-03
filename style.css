@@ -593,6 +593,16 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
+  .foto img{
+    transform: none !important;
+    filter: none !important;
+    will-change: auto;
+    image-rendering: auto;
+  }
+
+  .foto{
+    transform: none !important;
+  }
 
 }
 @media (hover: hover) and (pointer: fine){
