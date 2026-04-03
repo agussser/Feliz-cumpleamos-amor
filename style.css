@@ -596,16 +596,14 @@ z-index: 999;
   #puzzle{
   zoom:1.6;
   }
-  .foto img{
-    transform: none !important;
-    filter: none !important;
-    will-change: auto;
-    image-rendering: auto;
-  }
+  .foto img {
+  width: 80%;
+  max-width: 800px;
 
-  .foto{
-    transform: none !important;
-  }
+  border-radius: 15px;
+
+  outline: 1px solid transparent;
+}
 
 }
 @media (hover: hover) and (pointer: fine){
