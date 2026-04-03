@@ -593,14 +593,14 @@ z-index: 999;
   .contenido-carta{
   width:85%;
   }
-  .foto img {
-  width: 80%;
-  max-width: 800px;
+  #puzzle{
+    transform: scale(1.8);
+    transform-origin: top left;
+  }
 
-  border-radius: 15px;
-
-  outline: 1px solid transparent;
-}
+  #puzzlePantalla{
+    height: 900px; /* le damos espacio extra */
+  }
 
 }
 @media (hover: hover) and (pointer: fine){
@@ -608,7 +608,5 @@ z-index: 999;
     width: 1000px;
     height: 500px;
   }
-  .foto img{
-    image-rendering: -webkit-optimize-contrast;
-  }
+ 
 }
