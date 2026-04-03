@@ -594,19 +594,12 @@ z-index: 999;
   width:85%;
   }
   .foto img{
-  display: block;
-  width: 100%;
-  border-radius: 15px;
-
-  image-rendering: auto;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  }
-  .foto{
-  overflow: hidden;
-  border-radius: 15px;
+  filter: contrast(1);
  }
-
+  .foto{
+  background: transparent;
+ }
+  
 }
 @media (hover: hover) and (pointer: fine){
   .sobre{
