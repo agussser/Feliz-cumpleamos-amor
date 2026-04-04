@@ -591,10 +591,11 @@ z-index: 999;
 }
 @media (max-width: 600px), (hover: none){
   .contenido-carta{
-  width:85%;
+    width:85%;
   }
-  #puzzle{
-    transformar: escala(1.6); origen de la transformación: arriba a la izquierda;: (1.6); origen de transformación : arriba a la izquierda ;
+  #puzzlePantalla{
+    transform: scale(1.6);
+    transform-origin: top left;
   }
 
 }
