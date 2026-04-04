@@ -345,6 +345,10 @@ transition:0.8s;
 box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
+.contenido-carta h3{
+  font-size: 24px;
+}
+
 .sobre.abrir .tapa{
 transform:rotateX(180deg);
 }
