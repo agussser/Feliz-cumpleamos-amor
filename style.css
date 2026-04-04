@@ -452,7 +452,7 @@ position: relative;
 }
 .volver-1{
 position: absolute;
-top: 70px;
+top: 120px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -465,7 +465,7 @@ z-index: 999;
 }
 .volver-2{
 position: absolute;
-top: 10px;
+top: 60px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -478,7 +478,7 @@ z-index: 999;
 }
 .volver-3{
 position: absolute;
-top: -10px;
+top: 50px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -491,7 +491,7 @@ z-index: 999;
 }
 .volver-4{
 position: absolute;
-top: 70px;
+top: 120px;
 left: 20px;
 padding: 10px 15px;
 border: none;
@@ -590,13 +590,17 @@ z-index: 999;
     font-size: 30px;
     line-height: 1.6;
 }
+#pagina {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 @media (max-width: 600px), (hover: none){
   .contenido-carta{
     width:85%;
   }
   #puzzle{
     zoom:1.6;
-    margin-top: 80px;
+    margin-top: 100px;
   }
   [id^="pregunta"] {
     top: 160px; 
@@ -612,7 +616,7 @@ z-index: 999;
     top: 100px; 
   }
   .volver-5{
-    top: 60px;
+    top: 40px;
   }
 
 }
