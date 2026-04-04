@@ -335,7 +335,7 @@ respondido = false
 document.getElementById("pregunta1").style.display = "none"
 document.getElementById("pregunta2").style.display = "block"
 
-},2000)
+},2500)
 
 }
 
@@ -379,7 +379,7 @@ respondido = false
 document.getElementById("pregunta2").style.display = "none"
 document.getElementById("pregunta3").style.display = "block"
 
-},4100)
+},4600)
 
 }
 function responder3(respuesta){
@@ -500,7 +500,7 @@ respondido = false
 document.getElementById("pregunta5").style.display = "none"
 document.getElementById("pregunta6").style.display = "block"
 
-},2600)
+},3100)
 }
 function responder6(respuesta){
 if(respondido) return
@@ -541,7 +541,7 @@ document.getElementById("pregunta6").style.display = "none"
 document.getElementById("pregunta7").style.display = "block"
 mostrarResultados()
 
-},3300)
+},3600)
 }
 function responder7(respuesta){
 if(respondido) return
@@ -582,8 +582,7 @@ document.getElementById("pregunta7").style.display = "none"
 document.getElementById("final").style.display = "block"
 mostrarResultados()
 
-},4100)
-
+},4700)
 }
 function mostrarResultados(){
 
