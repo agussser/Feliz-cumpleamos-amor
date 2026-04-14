@@ -705,5 +705,9 @@ z-index: 1000;
   #sig1, #sig2, #sig3, #sig4, #sig5, #sig6{ 
   font-size: 32px;
   }
+  .foto{
+    zoom:0.7;
+    margin-top: 100px;
+  }
   
 }
