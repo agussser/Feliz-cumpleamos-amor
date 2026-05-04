@@ -617,7 +617,7 @@ setTimeout(() => {
 }
 function mostrarFinal(){
 
-document.getElementById("pregunta7").style.display = "none"
+document.getElementById("pregunta9").style.display = "none"
 
 document.getElementById("final").style.display = "block"
 
