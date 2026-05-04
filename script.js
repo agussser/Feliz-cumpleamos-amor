@@ -719,7 +719,12 @@ corazon.style.fontSize = (Math.random()*40 + 35) + "px"
 corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
 
 
+let yaExplotado = false
+
 function explotarCorazon(corazon){
+  if(yaExplotado) return
+  yaExplotado = true
+
   let rect = corazon.getBoundingClientRect()
 
   let x = rect.left + rect.width/2
@@ -730,14 +735,23 @@ function explotarCorazon(corazon){
   corazon.remove()
 }
 
-// PC
-corazon.addEventListener("click", () => explotarCorazon(corazon))
+// 🔥 DETECTAR SI ES CELULAR
+const esMobile = "ontouchstart" in window
 
-// CELU 🔥
-corazon.addEventListener("touchstart", (e) => {
-  e.preventDefault() // evita bugs raros
-  explotarCorazon(corazon)
-})
+if(esMobile){
+
+  corazon.addEventListener("touchstart", (e) => {
+    e.preventDefault()
+    explotarCorazon(corazon)
+  }, { passive: false })
+
+}else{
+
+  corazon.addEventListener("click", () => {
+    explotarCorazon(corazon)
+  })
+
+}
 
 
 document.body.appendChild(corazon)
