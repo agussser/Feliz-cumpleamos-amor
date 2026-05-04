@@ -510,6 +510,72 @@ respondido = false
 
 }
 function responder7(respuesta){
+if(document.getElementById("sig7").style.display === "inline-block") return
+let textoRespuesta
+let estado
+
+textoRespuesta = respuesta
+
+if(respuesta == "Transformers"){
+
+document.getElementById("resultado7").innerHTML = "❤️ Bienn amorcito, imposible que respondas mal esta, me lo mire como 500 mil veces."
+puntos++
+estado = "Correcto"
+
+}
+else{
+
+document.getElementById("resultado7").innerHTML = "❌ Amorrr, es re obvio que era Transformers."
+estado = "Incorrecto"
+
+}
+resultados.push({
+
+pregunta: "¿Cuál es mí pelicula favorita?",
+respuesta: textoRespuesta,
+correcta: "Transformers",
+estado: estado
+
+})
+
+document.getElementById("sig7").style.display = "inline-block"
+respondido = false
+
+}
+function responder8(respuesta){
+if(document.getElementById("sig8").style.display === "inline-block") return
+let textoRespuesta
+let estado
+
+textoRespuesta = respuesta
+
+if(respuesta == "Naruto"){
+
+document.getElementById("resultado8").innerHTML = "❤️ Aham amor bien, te amo."
+puntos++
+estado = "Correcto"
+
+}
+else{
+
+document.getElementById("resultado8").innerHTML = "❌ Amoorrr, claramente era Naruto bebee, me lo mire como 4 veces amorrr."
+estado = "Incorrecto"
+
+}
+resultados.push({
+
+pregunta: "¿Cuál anime mire más veces?",
+respuesta: textoRespuesta,
+correcta: "Naruto",
+estado: estado
+
+})
+
+document.getElementById("sig8").style.display = "inline-block"
+respondido = false
+
+}
+function responder9(respuesta){
 if(document.getElementById("finalBtn").style.display === "inline-block") return
 let textoRespuesta
 let estado
@@ -518,14 +584,14 @@ textoRespuesta = respuesta
 
 if(respuesta == "Tus piernas"){
 
-document.getElementById("resultado7").innerHTML = "❤️ Sii amorr muy bien, obviamente tus piernas es lo que mas me gusta de vos amore mio."
+document.getElementById("resultado9").innerHTML = "❤️ Sii amorr muy bien, obviamente tus piernas es lo que mas me gusta de vos amore mio."
 puntos++
 estado = "Correcto"
 
 }
 else{
 
-document.getElementById("resultado7").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual sea lo que sea que hayas respondido, me encanta también, te amo."
+document.getElementById("resultado9").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual sea lo que sea que hayas respondido, me encanta también, te amo."
 estado = "Incorrecto"
 
 }
@@ -578,10 +644,10 @@ else if(puntos >= totalPreguntas * 0.7){
 mensaje = "💖 AMORR te amo, respondiste casi todo bien, te re amo preciosa."
 }
 else if(puntos >= totalPreguntas * 0.4){
-mensaje = "💖 Amorrr medio mal pero bueno, aunque no hayas respondido todo bien te amo igual pero vas a tener que estudiar mas nomás después amorrr."
+mensaje = "💖 Amorrr medio mal pero bueno, aunque no hayas respondido todo bien te amo igual pero vas a tener que estudiar mas de mi amorr."
 }
 else{
-mensaje = "💖 Amorrrr re mall bebe, pero te amo tanto tanto igual amor, vas a tener que estudiar mucho nomás después."
+mensaje = "💖 Amorrrr re mall bebe, pero te amo tanto tanto igual amor, vas a tener que estudiar mucho de mi nomás después amor."
 }
 html += "<p style='font-size:30px'>" + mensaje + "</p>"
 

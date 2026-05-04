@@ -593,7 +593,7 @@ z-index: 999;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#sig1, #sig2, #sig3, #sig4, #sig5, #sig6{ 
+#sig1, #sig2, #sig3, #sig4, #sig5, #sig6, #sig7, #sig8{ 
 position: absolute;
 
 top: 90%;
@@ -612,7 +612,7 @@ z-index: 1000;
   border-radius: 10px;
 }
 /* 🔥 BOTON SIGUIENTE / RESULTADOS */
-#sig1, #sig2, #sig3, #sig4, #sig5, #sig6{ 
+#sig1, #sig2, #sig3, #sig4, #sig5, #sig6, #sig7, #sig8{ 
   position: absolute;
 
   background: #ff4d6d;
@@ -631,13 +631,13 @@ z-index: 1000;
 }
 
 /* hover pro */
-#sig1:hover, #sig2:hover, #sig3:hover, #sig4:hover, #sig5:hover, #sig6:hover {
+#sig1:hover, #sig2:hover, #sig3:hover, #sig4:hover, #sig5:hover, #sig6:hover, #sig7:hover, #sig8:hover {
   transform: scale(1.1) translateY(-3px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.35);
 }
 
 /* efecto click */
-#sig1:active, #sig2:active, #sig3:active, #sig4:active, #sig5:active, #sig6:active {
+#sig1:active, #sig2:active, #sig3:active, #sig4:active, #sig5:active, #sig6:active, #sig7:active, #sig8:active {
   transform: scale(0.95);
 }
 
@@ -684,7 +684,7 @@ z-index: 1000;
   .volver-5{
     top: 20px;
   }
-  #sig1, #sig2, #sig3, #sig4, #sig5, #sig6{ 
+  #sig1, #sig2, #sig3, #sig4, #sig5, #sig6, #sig7, #sig8{ 
   top: 80%;
   right: 30px;
   }
@@ -702,7 +702,7 @@ z-index: 1000;
   button{
   font-size: 32px;
   }
-  #sig1, #sig2, #sig3, #sig4, #sig5, #sig6{ 
+  #sig1, #sig2, #sig3, #sig4, #sig5, #sig6, #sig7, #sig8{ 
   font-size: 32px;
   }
   .foto{

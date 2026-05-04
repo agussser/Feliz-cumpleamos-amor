@@ -107,7 +107,7 @@
 
         <!-- POEMA -->
         <div id="textopoema" style="display:none;">
-        <h2>Te amo ❤️ </h2>
+        <h2>Mi amor ❤️ </h2>
         <button class="volver-2" onclick="volverPoema()">⬅ Volver</button>
         <div id class ="tarjeta-poema">
         <p> Ahora amándote,<br>
@@ -156,7 +156,7 @@
 
         <!-- TEXTO -->
         <div id="textito" style="display:none;">
-        <h2>❤️ Mi amor ❤️ </h2>
+        <h2>❤️ TE AMO ❤️ </h2>
         <button class="volver-3" onclick="volverTexto()">⬅ Volver</button>
         <div class="tarjeta2">
         <p> Te amo, y por si no te queda claro, te digo que te amo otra vez, todas las veces que dudes te lo haré acordar.
@@ -174,7 +174,7 @@
         </div>
 
         <div style="text-align:center; margin:50px;">
-        <h2>Ahora amor un jueguito</h2>
+        <h2>Un jueguito para vos amorr</h2>
         <button onclick="abrirPuzzle()">🧩 Armar rompecabezas</button>
         </div>
         </div>
@@ -314,13 +314,48 @@
 
         <h2>Pregunta 7</h2>
 
-        <p>¿Qué parte de tu cuerpo me gusta más?</p>
+        <p>¿Cuál es mí pelicula favorita?</p>
 
-        <button onclick="responder7('Tus piernas')">Tus piernas</button>
-        <button onclick="responder7('Tus brazos')">Tus brazos</button>
-        <button onclick="responder7('Tus piecitos')">Tus piecitos</button>
+        <button onclick="responder7('Interstellar')">Interstellar</button>
+        <button onclick="responder7('Transformers')">Transformers</button>
+        <button onclick="responder7('Spiderman')">Spiderman</button>
 
         <p id="resultado7"></p>
+        </div>
+        <button id="sig7" onclick="siguientePregunta(7)" style="display:none;">➡ Siguiente</button>
+
+        </div>
+        <!-- PREGUNTA 8 -->
+        <div id="pregunta8" style="display:none;">
+        <div class="tarjeta"> 
+
+        <h2>Pregunta 8</h2>
+
+        <p>¿Cuál anime mire más veces?</p>
+
+        <button onclick="responder8('Bleach')">Bleach</button>
+        <button onclick="responder8('Shingeki no Kyojin')">Shingeki no Kyojin</button>
+        <button onclick="responder8('Naruto')">Naruto</button>
+        <button onclick="responder8('Death Note')">Death Note</button>
+
+        <p id="resultado8"></p>
+        </div>
+        <button id="sig8" onclick="siguientePregunta(8)" style="display:none;">➡ Siguiente</button>
+
+        </div>
+        <!-- PREGUNTA 9 -->
+        <div id="pregunta9" style="display:none;">
+        <div class="tarjeta"> 
+
+        <h2>Pregunta 9</h2>
+
+        <p>¿Qué parte de tu cuerpo me gusta más?</p>
+
+        <button onclick="responder9('Tus piernas')">Tus piernas</button>
+        <button onclick="responder9('Tus brazos')">Tus brazos</button>
+        <button onclick="responder9('Tus piecitos')">Tus piecitos</button>
+
+        <p id="resultado9"></p>
         </div>
         <button id="finalBtn" onclick="mostrarFinal()" style="display:none;">❤️ Ver resultados</button>
 
@@ -330,9 +365,6 @@
         <div class="tarjeta" id="contenidoFinal"> 
 
         <h2>Resultados del juego amorrrr</h2>
-        <button onclick="abrirCarta()">💌 Carta</button>
-
-    </div>
 
     </div>
 
