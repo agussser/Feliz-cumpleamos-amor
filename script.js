@@ -508,6 +508,13 @@ estado: estado
 document.getElementById("sig6").style.display = "inline-block"
 respondido = false
 
+setTimeout(() => {
+  document.getElementById("sig6").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}, 200);
+
 }
 function responder7(respuesta){
 if(document.getElementById("sig7").style.display === "inline-block") return
@@ -574,6 +581,13 @@ estado: estado
 document.getElementById("sig8").style.display = "inline-block"
 respondido = false
 
+setTimeout(() => {
+  document.getElementById("sig8").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}, 200);
+
 }
 function responder9(respuesta){
 if(document.getElementById("finalBtn").style.display === "inline-block") return
@@ -617,12 +631,28 @@ setTimeout(() => {
 }
 function mostrarFinal(){
 
-document.getElementById("pregunta9").style.display = "none"
+  // 🔥 subir arriba INSTANTÁNEO antes de mostrar
+  window.scrollTo({
+    top: 0,
+    behavior: "instant"
+  });
 
-document.getElementById("final").style.display = "block"
+  // ocultar pregunta
+  document.getElementById("pregunta9").style.display = "none"
 
-mostrarResultados()
+  // mostrar final
+  const final = document.getElementById("final")
 
+  // 🔥 evitar glitch visual
+  final.style.visibility = "hidden"
+  final.style.display = "block"
+
+  // 🔥 ahora sí lo mostrás ya bien posicionado
+  requestAnimationFrame(() => {
+    final.style.visibility = "visible"
+  })
+
+  mostrarResultados()
 }
 
 function mostrarResultados(){
@@ -689,18 +719,25 @@ corazon.style.fontSize = (Math.random()*40 + 35) + "px"
 corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
 
 
-corazon.onclick = function(){
+function explotarCorazon(corazon){
+  let rect = corazon.getBoundingClientRect()
 
-let rect = corazon.getBoundingClientRect()
+  let x = rect.left + rect.width/2
+  let y = rect.top + rect.height/2
 
-let x = rect.left + rect.width/2
-let y = rect.top + rect.height/2
+  explosionMiniCorazones(x,y)
 
-explosionMiniCorazones(x,y)
-
-corazon.remove()
-
+  corazon.remove()
 }
+
+// PC
+corazon.addEventListener("click", () => explotarCorazon(corazon))
+
+// CELU 🔥
+corazon.addEventListener("touchstart", (e) => {
+  e.preventDefault() // evita bugs raros
+  explotarCorazon(corazon)
+})
 
 
 document.body.appendChild(corazon)
