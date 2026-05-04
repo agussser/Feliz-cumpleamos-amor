@@ -83,6 +83,7 @@ function Poema () {
   requestAnimationFrame(() => {
     poema.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 
