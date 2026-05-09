@@ -63,6 +63,7 @@ function volverHistoria(){
   requestAnimationFrame(() => {
     historia.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 
@@ -88,7 +89,8 @@ function Poema () {
 }
 
 function volverPoema(){
-
+  
+  detenerCorazones();
   const poema = document.getElementById("textopoema");
   const recuerdos = document.getElementById("recuerdos");
 
@@ -120,6 +122,7 @@ function Texto () {
   requestAnimationFrame(() => {
     textito.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 function volverTexto(){
@@ -136,10 +139,13 @@ function volverTexto(){
   requestAnimationFrame(() => {
     poema.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 
 function abrirPuzzle() {
+
+  detenerCorazones();
   const textito = document.getElementById("textito");
   const puzzle = document.getElementById("puzzlePantalla");
 
@@ -286,6 +292,7 @@ function volverRecuerdos(){
   requestAnimationFrame(() => {
     textito.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 function volverPuzzle(){
@@ -715,7 +722,17 @@ corazon.classList.add("corazon-fondo")
 
 corazon.style.left = Math.random()*100 + "vw"
 
+if(window.matchMedia("(hover: none)").matches){
+
+// 📱 CELULAR
 corazon.style.fontSize = (Math.random()*40 + 35) + "px"
+
+}else{
+
+// 💻 PC
+corazon.style.fontSize = (Math.random()*25 + 35) + "px"
+
+}
 
 corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
 
@@ -816,7 +833,7 @@ if(intervaloCorazones == null){
 
 crearCorazonFondo();
 
-intervaloCorazones = setInterval(crearCorazonFondo, 700)
+intervaloCorazones = setInterval(crearCorazonFondo, 850)
 
 }
 
