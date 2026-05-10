@@ -725,7 +725,7 @@ corazon.style.left = Math.random()*100 + "vw"
 if(window.matchMedia("(hover: none)").matches){
 
 // 📱 CELULAR
-corazon.style.fontSize = (Math.random()*45 + 65) + "px"
+corazon.style.fontSize = (Math.random()*25 + 65) + "px"
 
 }else{
 
@@ -776,7 +776,7 @@ document.body.appendChild(corazon)
 
 setTimeout(function(){
 corazon.remove()
-},15000)
+},25000)
 
 }
 function explosionMiniCorazones(x,y){
