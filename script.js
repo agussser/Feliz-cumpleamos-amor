@@ -725,7 +725,7 @@ corazon.style.left = Math.random()*100 + "vw"
 if(window.matchMedia("(hover: none)").matches){
 
 // 📱 CELULAR
-corazon.style.fontSize = (Math.random()*25 + 65) + "px"
+corazon.style.fontSize = (Math.random()*15 + 60) + "px"
 
 }else{
 
