@@ -727,7 +727,7 @@ if(window.matchMedia("(hover: none)").matches){
 // 📱 CELULAR
 corazon.style.fontSize = (Math.random()*5 + 60) + "px"
 
-corazon.style.animationDuration = (Math.random()*7 + 8) + "s"
+corazon.style.animationDuration = (Math.random()*2 + 12) + "s"
 
 }else{
 
@@ -736,7 +736,7 @@ corazon.style.fontSize = (Math.random()*25 + 35) + "px"
 
 }
 
-corazon.style.animationDuration = (Math.random()*4 + 4) + "s"
+corazon.style.animationDuration = (Math.random()*2 + 6) + "s"
 
 
 let yaExplotado = false

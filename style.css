@@ -124,7 +124,6 @@ position:fixed;
 bottom:-20px;
 font-size:22px;
 animation:flotar 8s linear infinite;
-opacity:0.5;
 pointer-events:auto;
 cursor:pointer;
 
@@ -137,7 +136,7 @@ backface-visibility: hidden;
 
 0%{
 transform:translate3d(0,0,0) scale(1);
-opacity:0.8;
+opacity:0.6;
 }
 
 100%{
