@@ -727,7 +727,7 @@ if(window.matchMedia("(hover: none)").matches){
 // 📱 CELULAR
 corazon.style.fontSize = (Math.random()*5 + 60) + "px"
 
-corazon.style.animationDuration = (Math.random()*2 + 12) + "s"
+corazon.style.animationDuration = (Math.random()*2 + 11) + "s"
 
 }else{
 
