@@ -727,6 +727,8 @@ if(window.matchMedia("(hover: none)").matches){
 // 📱 CELULAR
 corazon.style.fontSize = (Math.random()*5 + 55) + "px"
 
+corazon.style.animationDuration = (Math.random()*6 + 6) + "s"
+
 }else{
 
 // 💻 PC
@@ -734,7 +736,7 @@ corazon.style.fontSize = (Math.random()*25 + 35) + "px"
 
 }
 
-corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
+corazon.style.animationDuration = (Math.random()*4 + 4) + "s"
 
 
 let yaExplotado = false
@@ -833,7 +835,7 @@ if(intervaloCorazones == null){
 
 crearCorazonFondo();
 
-intervaloCorazones = setInterval(crearCorazonFondo, 850)
+intervaloCorazones = setInterval(crearCorazonFondo, 1500)
 
 }
 
