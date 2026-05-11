@@ -835,7 +835,7 @@ if(intervaloCorazones == null){
 
 crearCorazonFondo();
 
-intervaloCorazones = setInterval(crearCorazonFondo, 1500)
+intervaloCorazones = setInterval(crearCorazonFondo, 1600)
 
 }
 
