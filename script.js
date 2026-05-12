@@ -400,7 +400,7 @@ estado = "Correcto"
 }
 else{
 
-document.getElementById("resultado3").innerHTML = "❌ Como no vas a saberr amorr, muuyy mal."
+document.getElementById("resultado3").innerHTML = "❌ Como no vas a saberr amorr."
 estado = "Incorrecto"
 
 }
@@ -493,14 +493,14 @@ textoRespuesta = respuesta
 
 if(respuesta == "Tu humor"){
 
-document.getElementById("resultado6").innerHTML = "❤️ Re bienn bebe, amo tu humor, es lo que mas me encanta de vos."
+document.getElementById("resultado6").innerHTML = "❤️ Muy bien amor, obviamente lo que mas amo es tu humor, me encanta eso de vos."
 puntos++
 estado = "Correcto"
 
 }
 else{
 
-document.getElementById("resultado6").innerHTML = "❌ No amoorrrr, me re gustan las otras cosas pero me gusta mas tu humor mi cielito."
+document.getElementById("resultado6").innerHTML = "❌ No amoorrrr, me re gustan las otras cosas también pero me gusta mas tu humor mi cielito."
 estado = "Incorrecto"
 
 }
@@ -613,7 +613,7 @@ estado = "Correcto"
 }
 else{
 
-document.getElementById("resultado9").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual sea lo que sea que hayas respondido, me encanta también, te amo."
+document.getElementById("resultado9").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual todas las otras cosas me encantan también, aunque bueno, igual respondiste mal amor, te amo."
 estado = "Incorrecto"
 
 }
@@ -732,11 +732,11 @@ corazon.style.animationDuration = (Math.random()*2 + 11) + "s"
 }else{
 
 // 💻 PC
-corazon.style.fontSize = (Math.random()*25 + 35) + "px"
-
-}
+corazon.style.fontSize = (Math.random()*15 + 40) + "px"
 
 corazon.style.animationDuration = (Math.random()*2 + 6) + "s"
+
+}
 
 
 let yaExplotado = false
