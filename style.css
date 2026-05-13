@@ -93,28 +93,7 @@ transform:translateY(0);
 }
 
 }
-.corazon-fondo{
-position:fixed;
-bottom:-20px;
-font-size:20px;
-animation:flotar 8s linear infinite;
-opacity:0.6;
-pointer-events:none;
-}
 
-@keyframes flotar{
-
-0%{
-transform:translateY(0) scale(1);
-opacity:0.7;
-}
-
-100%{
-transform:translateY(-110vh) scale(1.5);
-opacity:0;
-}
-
-}
 body{
 background:linear-gradient(135deg,#fcabae);
 overflow-x:hidden;
@@ -123,21 +102,26 @@ overflow-x:hidden;
 position:fixed;
 bottom:-20px;
 font-size:22px;
-animation:flotar 8s linear infinite;
-opacity:0.7;
+animation-name: subir;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
 pointer-events:auto;
 cursor:pointer;
+
+will-change: transform;
+transform: translateZ(0);
+backface-visibility: hidden;
 }
 
-@keyframes flotar{
+@keyframes subir{
 
 0%{
-transform:translateY(0) scale(1);
-opacity:0.8;
+transform:translate3d(0,0,0) scale(1);
+opacity:0.6;
 }
 
 100%{
-transform:translateY(-110vh) scale(1.5);
+transform:translate3d(0,-110vh,0) scale(1.5);
 opacity:0;
 }
 

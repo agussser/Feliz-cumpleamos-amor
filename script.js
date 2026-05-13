@@ -63,6 +63,7 @@ function volverHistoria(){
   requestAnimationFrame(() => {
     historia.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 
@@ -88,7 +89,8 @@ function Poema () {
 }
 
 function volverPoema(){
-
+  
+  detenerCorazones();
   const poema = document.getElementById("textopoema");
   const recuerdos = document.getElementById("recuerdos");
 
@@ -120,6 +122,7 @@ function Texto () {
   requestAnimationFrame(() => {
     textito.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 function volverTexto(){
@@ -136,10 +139,13 @@ function volverTexto(){
   requestAnimationFrame(() => {
     poema.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 
 function abrirPuzzle() {
+
+  detenerCorazones();
   const textito = document.getElementById("textito");
   const puzzle = document.getElementById("puzzlePantalla");
 
@@ -286,6 +292,7 @@ function volverRecuerdos(){
   requestAnimationFrame(() => {
     textito.style.visibility = "visible";
   });
+  iniciarCorazones()
 
 }
 function volverPuzzle(){
@@ -393,7 +400,7 @@ estado = "Correcto"
 }
 else{
 
-document.getElementById("resultado3").innerHTML = "❌ Como no vas a saberr amorr, muuyy mal."
+document.getElementById("resultado3").innerHTML = "❌ Como no vas a saberr amorr."
 estado = "Incorrecto"
 
 }
@@ -486,14 +493,14 @@ textoRespuesta = respuesta
 
 if(respuesta == "Tu humor"){
 
-document.getElementById("resultado6").innerHTML = "❤️ Re bienn bebe, amo tu humor, es lo que mas me encanta de vos."
+document.getElementById("resultado6").innerHTML = "❤️ Muy bien amor, obviamente lo que mas amo es tu humor, me encanta eso de vos."
 puntos++
 estado = "Correcto"
 
 }
 else{
 
-document.getElementById("resultado6").innerHTML = "❌ No amoorrrr, me re gustan las otras cosas pero me gusta mas tu humor mi cielito."
+document.getElementById("resultado6").innerHTML = "❌ No amoorrrr, me re gustan las otras cosas también pero me gusta mas tu humor mi cielito."
 estado = "Incorrecto"
 
 }
@@ -606,7 +613,7 @@ estado = "Correcto"
 }
 else{
 
-document.getElementById("resultado9").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual sea lo que sea que hayas respondido, me encanta también, te amo."
+document.getElementById("resultado9").innerHTML = "❌ Amoorrrr, tus piernas me gustan mas, igual todas las otras cosas me encantan también, aunque bueno, igual respondiste mal amor, te amo."
 estado = "Incorrecto"
 
 }
@@ -713,11 +720,23 @@ corazon.innerHTML = "❤️"
 
 corazon.classList.add("corazon-fondo")
 
-corazon.style.left = Math.random()*100 + "vw"
+corazon.style.left = (5 + Math.random()*90) + "vw"
 
-corazon.style.fontSize = (Math.random()*40 + 35) + "px"
+if(window.matchMedia("(hover: none)").matches){
 
-corazon.style.animationDuration = (Math.random()*5 + 5) + "s"
+// 📱 CELULAR
+corazon.style.fontSize = (Math.random()*5 + 60) + "px"
+
+corazon.style.animationDuration = (Math.random()*2 + 11) + "s"
+
+}else{
+
+// 💻 PC
+corazon.style.fontSize = (Math.random()*15 + 40) + "px"
+
+corazon.style.animationDuration = (Math.random()*2 + 8) + "s"
+
+}
 
 
 let yaExplotado = false
@@ -757,9 +776,9 @@ if(esMobile){
 
 document.body.appendChild(corazon)
 
-setTimeout(function(){
+corazon.addEventListener("animationend", () => {
 corazon.remove()
-},15000)
+})
 
 }
 function explosionMiniCorazones(x,y){
@@ -814,9 +833,13 @@ function iniciarCorazones(){
 
 if(intervaloCorazones == null){
 
-crearCorazonFondo();
+crearCorazonFondo()
 
-intervaloCorazones = setInterval(crearCorazonFondo, 700)
+intervaloCorazones = setInterval(() => {
+
+crearCorazonFondo()
+
+}, 750)
 
 }
 
