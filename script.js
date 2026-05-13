@@ -778,7 +778,7 @@ document.body.appendChild(corazon)
 
 setTimeout(function(){
 corazon.remove()
-},25000)
+},20000)
 
 }
 function explosionMiniCorazones(x,y){
