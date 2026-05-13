@@ -776,9 +776,9 @@ if(esMobile){
 
 document.body.appendChild(corazon)
 
-setTimeout(function(){
+corazon.addEventListener("animationend", () => {
 corazon.remove()
-},20000)
+})
 
 }
 function explosionMiniCorazones(x,y){
@@ -835,7 +835,7 @@ if(intervaloCorazones == null){
 
 crearCorazonFondo();
 
-intervaloCorazones = setInterval(crearCorazonFondo, 1600)
+intervaloCorazones = setInterval(crearCorazonFondo, 1700)
 
 }
 
