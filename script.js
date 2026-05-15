@@ -827,32 +827,37 @@ document.getElementById("carta").style.display = "flex"
 
 }
 
-let intervaloCorazones = null
+let corazonesActivos = false;
+let ultimoCorazon = 0;
+
+function animarCorazones(tiempo){
+
+  if(!corazonesActivos) return;
+
+  if(tiempo - ultimoCorazon > 900){
+
+    crearCorazonFondo();
+
+    ultimoCorazon = tiempo;
+  }
+
+  requestAnimationFrame(animarCorazones);
+}
 
 function iniciarCorazones(){
 
-if(intervaloCorazones == null){
+  if(corazonesActivos) return;
 
-crearCorazonFondo()
+  corazonesActivos = true;
 
-intervaloCorazones = setInterval(() => {
-
-crearCorazonFondo()
-
-}, 900)
-
-}
-
+  requestAnimationFrame(animarCorazones);
 }
 
 function detenerCorazones(){
 
-clearInterval(intervaloCorazones)
+  corazonesActivos = false;
 
-intervaloCorazones = null
-
-document.querySelectorAll(".corazon-fondo").forEach(c => c.remove());
-
+  document.querySelectorAll(".corazon-fondo").forEach(c => c.remove());
 }
 
 function abrirSobre(){
