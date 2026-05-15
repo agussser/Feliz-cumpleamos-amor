@@ -897,3 +897,16 @@ setTimeout(escribir,velocidad)
 escribir()
 
 }
+let ultimoToque = 0;
+
+document.addEventListener("touchend", function(e) {
+
+let ahora = new Date().getTime();
+
+if (ahora - ultimoToque <= 300) {
+e.preventDefault();
+}
+
+ultimoToque = ahora;
+
+}, { passive:false });
