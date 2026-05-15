@@ -634,7 +634,8 @@ z-index: 1000;
     width:85%;
   }
   #puzzle{
-    zoom:1.6;
+    transform: scale(1.6);
+    transform-origin: top center;
     margin-top: 100px;
   }
   [id^="pregunta"] {
