@@ -105,22 +105,23 @@ font-size:22px;
 animation-name: subir;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
-pointer-events:none;
+pointer-events:auto;
+cursor:pointer;
 
-will-change: transform, opacity;
-contain: layout style paint;
-transform: translate3d(0,0,0);
+will-change: transform;
+transform: translateZ(0);
+backface-visibility: hidden;
 }
 
-@keyframes subir {
+@keyframes subir{
 
 0%{
-transform: translateY(0) scale(1);
+transform:translate3d(0,0,0) scale(1);
 opacity:0.6;
 }
 
 100%{
-transform: translateY(-1200px) scale(1.5);
+transform:translate3d(0,-110vh,0) scale(1.5);
 opacity:0;
 }
 
