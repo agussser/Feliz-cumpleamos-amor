@@ -1,6 +1,8 @@
 html, body{
 height:100%;
+touch-action: manipulation;
 }
+
 body{
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg,#ff9a9e,#fad0c4);
@@ -22,6 +24,7 @@ h2{
 p{
   font-size: 35px;
 }
+
 .container{
 max-width:800px;
 margin:auto;
@@ -102,15 +105,21 @@ overflow-x:hidden;
 position:fixed;
 bottom:-20px;
 font-size:22px;
+
 animation-name: subir;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
+
 pointer-events:auto;
 cursor:pointer;
 
-will-change: transform;
-transform: translateZ(0);
+will-change: transform, opacity;
+
+transform: translate3d(0,0,0);
+
 backface-visibility: hidden;
+
+contain: layout style paint;
 }
 
 @keyframes subir{
