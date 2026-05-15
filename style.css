@@ -99,7 +99,7 @@ background:linear-gradient(135deg,#fcabae);
 overflow-x:hidden;
 }
 .corazon-fondo{
-position:absolute;
+position:fixed;
 bottom:-20px;
 font-size:22px;
 animation-name: subir;
@@ -116,12 +116,12 @@ backface-visibility: hidden;
 @keyframes subir{
 
 0%{
-transform:translate3d(0,0,0) scale(1);
+transform:translateY(0);
 opacity:0.6;
 }
 
 100%{
-transform:translate3d(0,-110vh,0) scale(1.5);
+transform:translateY(-120vh);
 opacity:0;
 }
 
