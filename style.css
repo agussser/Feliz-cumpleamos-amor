@@ -105,8 +105,7 @@ font-size:22px;
 animation-name: subir;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
-pointer-events:auto;
-cursor:pointer;
+pointer-events:none;
 
 will-change: transform, opacity;
 contain: layout style paint;
