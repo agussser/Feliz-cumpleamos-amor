@@ -839,7 +839,7 @@ intervaloCorazones = setInterval(() => {
 
 crearCorazonFondo()
 
-}, 850)
+}, 900)
 
 }
 

@@ -616,9 +616,11 @@ z-index: 1000;
 
 /* hover pro */
 #sig1:hover, #sig2:hover, #sig3:hover, #sig4:hover, #sig5:hover, #sig6:hover, #sig7:hover, #sig8:hover {
-  transform: scale(1.1) translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  box-shadow:0 8px 20px rgba(255,77,109,0.6);
+  transform:scale(1.1);
+  background:#ff2f5a;
 }
+
 
 /* efecto click */
 #sig1:active, #sig2:active, #sig3:active, #sig4:active, #sig5:active, #sig6:active, #sig7:active, #sig8:active {
