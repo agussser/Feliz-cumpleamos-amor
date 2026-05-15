@@ -7,8 +7,9 @@ body{
   text-align:center;
   margin:0;
   padding:0;
+
   overflow-x:hidden;
-  overflow: hidden;
+  overflow-y:hidden;
 }
 h1{
   font-size: 50px;
@@ -99,12 +100,14 @@ background:linear-gradient(135deg,#fcabae);
 overflow-x:hidden;
 }
 .corazon-fondo{
-position:fixed;
+position:absolute;
 bottom:-20px;
 font-size:22px;
+
 animation-name: subir;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
+
 pointer-events:auto;
 cursor:pointer;
 
