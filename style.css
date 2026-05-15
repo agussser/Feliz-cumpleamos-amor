@@ -100,14 +100,12 @@ background:linear-gradient(135deg,#fcabae);
 overflow-x:hidden;
 }
 .corazon-fondo{
-position:absolute;
+position:fixed;
 bottom:-20px;
 font-size:22px;
-
 animation-name: subir;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
-
 pointer-events:auto;
 cursor:pointer;
 
