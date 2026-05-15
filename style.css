@@ -108,20 +108,20 @@ animation-fill-mode: forwards;
 pointer-events:auto;
 cursor:pointer;
 
-will-change: transform;
-transform: translateZ(0);
-backface-visibility: hidden;
+will-change: transform, opacity;
+contain: layout style paint;
+transform: translate3d(0,0,0);
 }
 
-@keyframes subir{
+@keyframes subir {
 
 0%{
-transform:translate3d(0,0,0) scale(1);
+transform: translateY(0) scale(1);
 opacity:0.6;
 }
 
 100%{
-transform:translate3d(0,-110vh,0) scale(1.5);
+transform: translateY(-1200px) scale(1.5);
 opacity:0;
 }
 
