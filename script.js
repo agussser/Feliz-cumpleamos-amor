@@ -727,14 +727,14 @@ if(window.matchMedia("(hover: none)").matches){
 // 📱 CELULAR
 corazon.style.fontSize = (Math.random()*5 + 60) + "px"
 
-corazon.style.animationDuration = (Math.random()*2 + 9) + "s"
+corazon.style.animationDuration = (Math.random()*2 + 8) + "s"
 
 }else{
 
 // 💻 PC
 corazon.style.fontSize = (Math.random()*15 + 40) + "px"
 
-corazon.style.animationDuration = (Math.random()*2 + 8) + "s"
+corazon.style.animationDuration = (Math.random()*2 + 7) + "s"
 
 }
 
