@@ -7,9 +7,8 @@ body{
   text-align:center;
   margin:0;
   padding:0;
-
   overflow-x:hidden;
-  overflow-y:hidden;
+  overflow: hidden;
 }
 h1{
   font-size: 50px;
@@ -112,7 +111,6 @@ cursor:pointer;
 will-change: transform;
 transform: translateZ(0);
 backface-visibility: hidden;
-contain: layout style paint;
 }
 
 @keyframes subir{
@@ -123,7 +121,7 @@ opacity:0.6;
 }
 
 100%{
-transform:translate3d(0,-2500px,0) scale(1.5);
+transform:translate3d(0,-110vh,0) scale(1.5);
 opacity:0;
 }
 
@@ -570,10 +568,6 @@ z-index: 999;
   box-shadow:0px 10px 25px rgba(0,0,0,0.2);
   margin-top:40px;
 }
-.tarjeta2 p {
-    font-size: 30px;
-    line-height: 1.6;
-}
 
 #pagina {
   padding-top: 30px;
@@ -635,8 +629,7 @@ z-index: 1000;
     width:85%;
   }
   #puzzle{
-    transform: scale(1.6);
-    transform-origin: top center;
+    zoom:1.6;
     margin-top: 100px;
   }
   [id^="pregunta"] {
