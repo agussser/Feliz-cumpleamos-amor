@@ -773,7 +773,6 @@ if(esMobile){
 
 }
 
-
 document.body.appendChild(corazon)
 
 corazon.addEventListener("animationend", () => {
